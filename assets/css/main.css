@@ -1627,7 +1627,7 @@
 		}
 
 	a {
-		color: #5385c1;
+		color: #c5c1c1;
 		text-decoration: underline;
 	}
 
@@ -1648,8 +1648,12 @@
 		margin: 0 0 2em 0;
 	}
 
+	bold{
+		font-weight: 700;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
-		color: #475e7a;
+		color: #51646f;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1746,6 +1750,10 @@
 		text-align: right;
 	}
 
+	.sec {
+		background-color: #f5f5f5;
+	}
+
 	.inner {
 		max-width: 75em;
 		margin: 0 auto;
@@ -1799,7 +1807,7 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #475e7a;
+			background: #51646f;
 			color: #bacee6;
 		}
 
@@ -1852,7 +1860,7 @@
 		}
 
 	header p {
-		color: #475e7a;
+		color: #51646f;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -1876,6 +1884,12 @@
 
 /* Flex */
 
+	.flux {
+		display: flex;
+/*		flex-direction: column;*/
+		gap: var(--gap, 2rem);
+	}
+
 	.flex {
 		display: -ms-flexbox;
 		-ms-flex-wrap: wrap;
@@ -1892,7 +1906,8 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		padding-bottom: 10px
+		padding-bottom: 20px;
+		padding-top: 20px;
 	}
 
 		.flex.flex-2 article {
@@ -2622,8 +2637,9 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #dbdbdb;
+			box-shadow: inset 0 0 0 2px #37485c;
 			color: #555 !important;
+/*			51646f*/
 		}
 
 			input[type="submit"].alt:hover,
@@ -2631,7 +2647,7 @@
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: rgba(144, 144, 144, 0.075);
+				background-color: rgba(120, 120, 120, 0.075);
 			}
 
 			input[type="submit"].alt:active,
@@ -2639,7 +2655,7 @@
 			input[type="button"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background-color: rgba(144, 144, 144, 0.2);
+				background-color: rgba(120, 120, 120, 0.2);
 			}
 
 			input[type="submit"].alt.icon:before,
@@ -2655,7 +2671,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #5385c1;
+			background-color: #37485c;
 			color: #ffffff !important;
 		}
 
@@ -2664,7 +2680,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #6692c8;
+				background-color: #4a5e75;
 			}
 
 			input[type="submit"].special:active,
@@ -2672,7 +2688,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #4278b8;
+				background-color: #5d748f;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2711,7 +2727,7 @@
 	}
 
 		.subpage #header {
-			background: #5385c1;
+			background: #37485c;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2726,7 +2742,8 @@
 		line-height: 3.25em;
 		position: absolute;
 		text-align: right;
-		top: 0.5em;
+/*		top: 0.5em;*/
+/*		padding: 0 5em 0 5em;*/
 		width: 100%;
 		z-index: 10001;
 	}
@@ -2739,15 +2756,29 @@
 		#header .logo {
 			color: #ffffff;
 			display: inline-block;
+/*			font-weight: 600;*/
+/*			height: inherit;*/
+			left: 0;
+/*			line-height: inherit;*/
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0.5em;
+/*			font-size: 1em;*/
+		}
+
+		#header .logo2 {
+			color: #ffffff;
+			display: inline-block;
 			font-weight: 600;
 			height: inherit;
 			left: 0;
 			line-height: inherit;
 			margin: 0;
-			padding: 0;
+			padding-left: 3em;
 			position: absolute;
 			top: 0;
-			font-size: 1em;
+			font-size: 1.1em;
 		}
 
 		#header a {
@@ -2757,9 +2788,9 @@
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
 			padding: 0 0.75em;
-			color: inherit;
+			color: #ebe6e6;
 			text-decoration: none;
-			font-size: 1.0em;
+			font-size: 1.1em;
 		}
 
 			#header a:hover {
@@ -2782,7 +2813,7 @@
 					font-size: 1.25em;
 				}
 
-				@media screen and (max-width: 980px) {
+				@media screen and (max-width: 710px) {
 
 					#header a.navPanelToggle {
 						display: inline-block;
@@ -2790,7 +2821,7 @@
 
 				}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 636px) {
 
 				#header a {
 					padding: 0 0.5em;
@@ -2798,20 +2829,20 @@
 
 			}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 710px) {
 
 		#header {
-			top: 3em;
+			top: 1.5em;
 			height: 44px;
 			line-height: 44px;
 		}
 
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 636px) {
 
 		#header {
-			top: 2em;
+			top: 1.5em;
 		}
 
 	}
@@ -2819,7 +2850,7 @@
 	@media screen and (max-width: 480px) {
 
 		#header {
-			top: 1em;
+			top: 0.5em;
 			min-width: 320px;
 		}
 
@@ -2827,7 +2858,7 @@
 
 /* Nav */
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 710px) {
 
 		#nav {
 			display: none;
@@ -2850,7 +2881,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #5385c1;
+		background: #37485c;
 		color: #d4e0ef;
 		height: 100%;
 		max-width: 80%;
@@ -2925,34 +2956,41 @@
 				color: inherit;
 			}
 
+.rightShift {
+	left: 0;
+	background-color: aquamarine;
+}
+
 /* Banner */
 
-	#banner {
-		padding: 8em 0 1em 0;
-		background-image: url('../../images/banner.png');
-		background-size: cover;
-		background-position: top;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		text-align: center;
-/*		border-top: 0.5em solid #5385c1;*/
-	}
+#banner {
+	padding: 8em 0 5.5em 16em;
+	background-image: url('../../images/banner100.png');
+	/*	background-size: cover;*/
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: #7f4040;
+/*	resize: both;*/
+	text-align: center;
+	/*		border-top: 0.5em solid #5385c1;*/
+}
 
 		#banner h1 {
 			font-size: 4.5em;
-			font-weight: 100;
+			font-weight: 500;
 			color: #fff;
 			line-height: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0.25em 0 0.5em 0;
 			padding: 0;
 		}
 
 		#banner h2 {
 			font-size: 1.5em;
 			font-weight: 100;
-			color: rgba(255, 255, 255, 0.65);
+			color: rgba(255, 255, 255, 0.95);
 			line-height: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0 0 1.5em 0;
 			padding: 0;
 		}
 
@@ -3009,6 +3047,102 @@
 			}
 
 		}
+
+#banner2 {
+	padding: 8em 0 6.5em 0;
+	background-image: url('../../images/banner100.png');
+	/*	background-size: cover;*/
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	/*	background-color: aqua;*/
+	resize: both;
+	text-align: center;
+/*	border-top: 0.5em solid #37485c;*/
+}
+
+	#banner2 h1 {
+		font-size: 4.5em;
+		font-weight: 500;
+		color: #fff;
+		line-height: 1em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+
+	#banner2 h2 {
+		font-size: 1.5em;
+		font-weight: 100;
+		color: rgba(255, 255, 255, 0.65);
+		line-height: 1em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+	}
+
+	#banner2 p {
+		font-size: 1em;
+		color: rgba(255, 255, 255, 0.65);
+		margin-bottom: 1.75em;
+	}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+	#banner2 {
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+	#banner2 {
+		padding: 10em 2em 8em 2em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+
+	#banner2 {
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	#banner2 {
+		padding: 8em 1.5em 6em 1.5em;
+	}
+
+		#banner2 h1 {
+			font-size: 2.5em;
+		}
+
+		#banner2 p {
+			font-size: .9em;
+		}
+}
+
+@media screen and (max-width: 480px) {
+
+	#banner2 {
+		padding: 6em 1.5em 4em 1.5em;
+	}
+}
+
+/* Devider */
+#devider {
+	padding: 8em 0 6.5em 16em;
+/*	border-top: 10px solid red;*/
+	background-color: antiquewhite;
+	/*	background-size: cover;*/
+	text-align: center;
+	border-top: 0.5em solid #5385c1;
+}
+/*#devider {*/
+	/*	border-top: 1px solid #dbdbdb; */
+	/*border-top: 5px solid red;
+	background-color: antiquewhite;
+	padding-top: 3em;
+}*/
 
 /* Footer */
 
@@ -3069,3 +3203,37 @@
 		}
 
 	}
+
+
+/* showcase */
+
+#showcase {
+/*	background-color: #dbdbdb;*/
+	/*	text-align: center;*/
+	/*	border-top: 0.5em solid #51646f;*/
+	padding: 2.5em 0 4em 0;
+}
+
+	#showcase h1 {
+		font-size: 2.2em;
+		font-weight: 600;
+		color: #51646f;
+		line-height: 1em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+
+	/*#showcase h2 {
+		font-size: 1.5em;
+		font-weight: 100;
+		color: rgba(255, 255, 255, 0.65);
+		line-height: 1em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+	}
+
+	#showcase p {
+		font-size: 1em;
+		color: rgba(255, 255, 255, 0.65);
+		margin-bottom: 1.75em;
+	}*/
