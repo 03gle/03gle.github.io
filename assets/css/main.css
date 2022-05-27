@@ -2986,7 +2986,7 @@
 	background-image: url('../../images/banner100.png');
 	/*	background-size: cover;*/
 	background-position: center;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: #7f4040;
 /*	resize: both;*/
