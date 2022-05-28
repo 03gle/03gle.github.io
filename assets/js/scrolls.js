@@ -8,7 +8,7 @@ window.addEventListener("scroll", function (event) {
     var r = document.querySelector(':root');
     var rs = getComputedStyle(r)
 
-    var scrollGate = rs.getPropertyValue("--header-stick-after-pixels") //starts transition when you passed this amount of pixels
+    var scrollGate = 30 //starts transition when you passed this amount of pixels
 
     var lightColor = rs.getPropertyValue("--main-bg-color")
     var darkColor = rs.getPropertyValue("--dark-text-color")
