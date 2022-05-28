@@ -306,12 +306,31 @@ body {
 
 }
 
-#personPic {
-	display: block;
+@media screen and (max-width: 480px) {
+
+	.container.\31 25\25 {
+		width: 100%;
+		max-width: 112.5%;
+		min-width: 90%;
+	}
+
+	.container.\37 5\25 {
+		width: 67.5%;
+	}
+
+	.container.\35 0\25 {
+		width: 45%;
+	}
+
+	.container.\32 5\25 {
+		width: 22.5%;
+	}
+
+	.container {
+		width: 90% !important;
+	}
+
 }
-
-/* MOBILE VIEW RULES */
-
 
 /* Grid */
 
@@ -3490,31 +3509,13 @@ button:disabled,
 		margin-bottom: 1.75em;
 	}*/
 
+
+/* BRIN'S MOBILE RULEZ! */
+#personPic {
+	display: block;
+}
+
 @media screen and (max-width: 480px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 112.5%;
-		min-width: 90%;
-	}
-
-	.container.\37 5\25 {
-		width: 67.5%;
-	}
-
-	.container.\35 0\25 {
-		width: 45%;
-	}
-
-	.container.\32 5\25 {
-		width: 22.5%;
-	}
-
-	.container {
-		width: 90% !important;
-	}
-
-	/* we hide your beautiful face when the view is mobile (defined above) */
 	#personPic {
 		display: none;
 	}
@@ -3522,5 +3523,4 @@ button:disabled,
 	#banner {
 		text-align: left;
 	}
-
 }
