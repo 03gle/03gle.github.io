@@ -14,29 +14,29 @@ window.addEventListener("scroll", function (event) {
     var darkColor = rs.getPropertyValue("--dark-text-color")
 
     //console.log(scroll)
-    if (scroll > scrollGate) {
-        header.style.backgroundColor = lightColor
-        header.style.color = darkColor
-        header.style.position = "sticky";
+    //if (scroll > scrollGate) {
+    //    header.style.backgroundColor = lightColor
+    //    header.style.color = darkColor
+    //    header.style.position = "sticky";
 
 
-        //change the color of the name
-        name.style.color = darkColor
-        //change link color
-        for (let item of navItems) {
-            item.style.color = darkColor
-        }
-    }
+    //    //change the color of the name
+    //    name.style.color = darkColor
+    //    //change link color
+    //    for (let item of navItems) {
+    //        item.style.color = darkColor
+    //    }
+    //}
 
-    else {
-        header.style.backgroundColor = "transparent"
-        header.style.color = lightColor
-        header.style.position = "sticky";
+    //else {
+    //    header.style.backgroundColor = "transparent"
+    //    header.style.color = lightColor
+    //    header.style.position = "sticky";
 
-        name.style.color = lightColor
-        //change link color
-        for (let item of navItems) {
-            item.style.color = darkColor
-        }
-    }
+    //    name.style.color = lightColor
+    //    //change link color
+    //    for (let item of navItems) {
+    //        item.style.color = darkColor
+    //    }
+    //}
 })

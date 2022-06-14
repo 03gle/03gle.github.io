@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
+/*@import url(font-awesome.min.css);*/
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
 :root {
@@ -2984,22 +2984,18 @@ button:disabled,
 
 #header {
 	color: #d4e0ef;
-	background-color: transparent;
+	background-color: #7f4040;
 	cursor: default;
 	height: 3.75em;
 	left: 0;
 	line-height: 3.75em;
-
 	position: sticky;
 	top: 0;
-
 	text-align: right;
 	/*		top: 0.5em;*/
 	/*		padding: 0 5em 0 5em;*/
 	width: 100%;
 	z-index: 10001;
-
-
 	transition: background-color var(--animationSpeed);
 }
 
@@ -3081,7 +3077,7 @@ button:disabled,
 @media screen and (max-width: 636px) {
 
 	#header a {
-		padding: 0 0.5em;
+/*		padding: 0 0.5em;*/
 	}
 
 }
@@ -3089,8 +3085,8 @@ button:disabled,
 @media screen and (max-width: 710px) {
 
 	#header {
-		top: 1.5em;
-		height: 44px;
+/*		top: 1.5em;*/
+		height: 54px;
 		line-height: 44px;
 	}
 
@@ -3099,7 +3095,7 @@ button:disabled,
 @media screen and (max-width: 636px) {
 
 	#header {
-		top: 1.5em;
+/*		top: 1.5em;*/
 	}
 
 }
@@ -3107,7 +3103,7 @@ button:disabled,
 @media screen and (max-width: 480px) {
 
 	#header {
-		top: 0.5em;
+/*		top: 0.5em;*/
 		min-width: 320px;
 	}
 
@@ -3221,8 +3217,8 @@ button:disabled,
 /* Banner */
 
 #banner {
-	padding: 8em 0 8.5em 16em;
-	background-image: url('../../images/banner100.png');
+	padding: 6em 0 4.5em 16em;
+	background-image: url('../../images/banner_final.png');
 	/*	background-size: cover;*/
 	background-position: center;
 	background-attachment: fixed;
@@ -3268,7 +3264,7 @@ button:disabled,
 @media screen and (max-width: 1280px) {
 
 	#banner {
-		padding: 10em 2em 8em 2em;
+		padding: 4em 2em 6em 2em;
 	}
 
 }
@@ -3284,7 +3280,7 @@ button:disabled,
 @media screen and (max-width: 736px) {
 
 	#banner {
-		padding: 8em 1.5em 6em 1.5em;
+		padding: 3em 1.5em 4em 1.5em;
 	}
 
 	#banner h1 {
@@ -3300,7 +3296,7 @@ button:disabled,
 @media screen and (max-width: 480px) {
 
 	#banner {
-		padding: 6em 1.5em 4em 1.5em;
+		padding: 2em 1.5em 3em 1.5em;
 	}
 
 }
@@ -3405,7 +3401,7 @@ button:disabled,
 /* Footer */
 
 #footer .inner {
-	border-top: 1px solid #dbdbdb;
+/*	border-top: 1px solid #dbdbdb;*/
 	padding-top: 3em;
 }
 
@@ -3462,6 +3458,35 @@ button:disabled,
 
 }
 
+/* sectionHead */
+
+#sectionHead {
+	background-color: #dbdbdb;
+	/*	text-align: center;*/
+	/*	border-top: 0.5em solid #51646f;*/
+	padding: 2.5em 0 4em 0;
+}
+
+	#sectionHead h1 {
+		font-size: 2.2em;
+		font-weight: 600;
+		color: #51646f;
+		line-height: 1em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+
+
+#nav a {
+	color: var(--light-text--color);
+	transition: color 0.35s;
+}
+
+#personName {
+	color: var(--light-text--color);
+	transition: var(--animationSpeed);
+}
+
 
 /* showcase */
 
@@ -3469,7 +3494,7 @@ button:disabled,
 	/*	background-color: #dbdbdb;*/
 	/*	text-align: center;*/
 	/*	border-top: 0.5em solid #51646f;*/
-	padding: 2.5em 0 4em 0;
+	padding: 1.5em 0 1.5em 0;
 }
 
 #showcase h1 {
