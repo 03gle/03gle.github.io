@@ -8,7 +8,7 @@ window.addEventListener("scroll", function (event) {
     var r = document.querySelector(':root');
     var rs = getComputedStyle(r)
 
-    var scrollGate = 30 //starts transition when you passed this amount of pixels
+    var scrollGate = 40 //starts transition when you passed this amount of pixels
 
     var lightColor = rs.getPropertyValue("--main-bg-color")
     var darkColor = rs.getPropertyValue("--dark-text-color")
@@ -31,12 +31,12 @@ window.addEventListener("scroll", function (event) {
     else {
         header.style.backgroundColor = "transparent"
         header.style.color = lightColor
-        header.style.position = "absolute";
+        header.style.position = "sticky";
 
         name.style.color = lightColor
         //change link color
         for (let item of navItems) {
-            item.style.color = lightColor
+            item.style.color = darkColor
         }
     }
 })

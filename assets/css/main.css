@@ -2990,7 +2990,7 @@ button:disabled,
 	left: 0;
 	line-height: 3.75em;
 
-	position: absolute;
+	position: sticky;
 	top: 0;
 
 	text-align: right;
