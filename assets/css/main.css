@@ -3302,7 +3302,7 @@ button:disabled,
 }
 
 #banner2 {
-	padding: 8em 0 6.5em 0;
+	padding: 5em 0 3.5em 0;
 	background-image: url('../../images/banner100.png');
 	/*	background-size: cover;*/
 	background-position: center;
@@ -3315,7 +3315,7 @@ button:disabled,
 }
 
 #banner2 h1 {
-	font-size: 4.5em;
+	font-size: 3.5em;
 	font-weight: 500;
 	color: #fff;
 	line-height: 1em;
@@ -3324,7 +3324,7 @@ button:disabled,
 }
 
 #banner2 h2 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 100;
 	color: rgba(255, 255, 255, 0.65);
 	line-height: 1em;
@@ -3333,7 +3333,7 @@ button:disabled,
 }
 
 #banner2 p {
-	font-size: 1em;
+	font-size: 0.8em;
 	color: rgba(255, 255, 255, 0.65);
 	margin-bottom: 1.75em;
 }
