@@ -1,17 +1,17 @@
 window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
+    //var scroll = this.scrollY;
 
-    var header = this.document.getElementById("header")
-    var navItems = this.document.getElementById("nav").children;
-    var name = this.document.getElementById("personName")
+    //var header = this.document.getElementById("header")
+    //var navItems = this.document.getElementById("nav").children;
+    //var name = this.document.getElementById("personName")
 
-    var r = document.querySelector(':root');
-    var rs = getComputedStyle(r)
+    //var r = document.querySelector(':root');
+    //var rs = getComputedStyle(r)
 
-    var scrollGate = 40 //starts transition when you passed this amount of pixels
+    //var scrollGate = 40 //starts transition when you passed this amount of pixels
 
-    var lightColor = rs.getPropertyValue("--main-bg-color")
-    var darkColor = rs.getPropertyValue("--dark-text-color")
+    //var lightColor = rs.getPropertyValue("--main-bg-color")
+    //var darkColor = rs.getPropertyValue("--dark-text-color")
 
     //console.log(scroll)
     //if (scroll > scrollGate) {
