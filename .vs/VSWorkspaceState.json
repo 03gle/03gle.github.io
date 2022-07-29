@@ -4,10 +4,8 @@
     "\\assets",
     "\\assets\\css",
     "\\assets\\fonts",
-    "\\assets\\js",
-    "\\documents",
-    "\\images"
+    "\\documents"
   ],
-  "SelectedNode": "\\images\\loop2.gif",
+  "SelectedNode": "\\assets\\css\\main.css",
   "PreviewInSolutionExplorer": false
 }
