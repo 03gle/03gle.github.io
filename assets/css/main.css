@@ -3218,10 +3218,11 @@ button:disabled,
 
 #banner {
 	padding: 6em 0 4.5em 16em;
-	background-image: url('../../images/banner_final.png');
-	/*	background-size: cover;*/
+	background-image: url('../../images/bannerOriginal.png');
+/*	background-size: contain;*/
+	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-color: #7f4040;
 	/*	resize: both;*/
@@ -3257,6 +3258,7 @@ button:disabled,
 
 	#banner {
 		background-attachment: scroll;
+		background-image: url('../../images/grass.jpeg');
 	}
 
 }
@@ -3303,8 +3305,10 @@ button:disabled,
 
 #banner2 {
 	padding: 5em 0 3.5em 0;
-	background-image: url('../../images/banner_final.png');
-	/*	background-size: cover;*/
+		background-image: url('../../images/ravine_back_white.png');
+/*	background-image: url('../../images/slow.gif');*/
+			background-size: cover;
+	/*background-size: contain;*/
 	background-position: center;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
@@ -3317,16 +3321,16 @@ button:disabled,
 #banner2 h1 {
 	font-size: 3.5em;
 	font-weight: 500;
-	color: #fff;
+	color: #ffffff;
 	line-height: 1em;
 	margin: 0 0 0.5em 0;
 	padding: 0;
 }
 
 #banner2 h2 {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-weight: 100;
-	color: rgba(255, 255, 255, 0.65);
+	color: rgba(255, 255, 255, 0.95);
 	line-height: 1em;
 	margin: 0 0 1.5em 0;
 	padding: 0;
@@ -3400,12 +3404,67 @@ button:disabled,
 
 /* Footer */
 
+#footer {
+	/*	border-top: 1px solid #dbdbdb;*/
+	background-image: url('../../images/bannerOriginal.png');
+	/*		background-size: cover;*/
+	/*background-size: contain;*/
+	background-position: bottom;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	/*	background-color: aqua;*/
+	resize: both;
+}
+#footer_more {
+	/*	border-top: 1px solid #dbdbdb;*/
+		background-image: url('../../images/ravin_foot.png');
+/*	background-image: url('../../images/walky.gif');*/
+			background-size: cover;
+/*	background-size: contain;*/
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	/*	background-color: aqua;*/
+	resize: both;
+}
+
+#footer_cv {
+	/*	border-top: 1px solid #dbdbdb;*/
+	/*		background-image: url('../../images/ravin_foot.png');*/
+	background-image: url('../../images/walky.gif');
+	background-size: cover;
+	/*	background-size: contain;*/
+	background-position: top;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	/*	background-color: aqua;*/
+	resize: both;
+}
+
 #footer .inner {
-/*	border-top: 1px solid #dbdbdb;*/
+	
+	padding-top: 3em;
+}
+#footer_more .inner {
+	padding-top: 3em;
+}
+#footer_cv .inner {
 	padding-top: 3em;
 }
 
 #footer .copyright {
+	color: #bbb;
+	font-size: 0.8em;
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+#footer_more .copyright {
+	color: #bbb;
+	font-size: 0.8em;
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+#footer_cv .copyright {
 	color: #bbb;
 	font-size: 0.8em;
 	margin: 0 0 2em 0;
@@ -3416,13 +3475,36 @@ button:disabled,
 	color: #bbb;
 	text-decoration: none;
 }
+#footer_more .copyright a {
+	color: #bbb;
+	text-decoration: none;
+}
+#footer_cv .copyright a {
+	color: #bbb;
+	text-decoration: none;
+}
+
 
 #footer .copyright a:hover {
 	color: #bbb;
 	text-decoration: underline;
 }
+#footer_more .copyright a:hover {
+	color: #bbb;
+	text-decoration: underline;
+}
+#footer_cv .copyright a:hover {
+	color: #bbb;
+	text-decoration: underline;
+}
 
 #footer ul.icons li .icon {
+	font-size: 0.58em;
+}
+#footer_more ul.icons li .icon {
+	font-size: 0.58em;
+}
+#footer_cv ul.icons li .icon {
 	font-size: 0.58em;
 }
 
@@ -3431,8 +3513,28 @@ button:disabled,
 	#footer .inner {
 		padding-top: 2em;
 	}
+	#footer_more .inner {
+		padding-top: 2em;
+	}
+	#footer_cv .inner {
+		padding-top: 2em;
+	}
 
 	#footer .copyright {
+		-ms-flex-order: 2;
+		-moz-order: 2;
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+	#footer_more .copyright {
+		-ms-flex-order: 2;
+		-moz-order: 2;
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+	#footer_cv .copyright {
 		-ms-flex-order: 2;
 		-moz-order: 2;
 		-webkit-order: 2;
@@ -3447,6 +3549,20 @@ button:disabled,
 		-ms-order: 1;
 		order: 1;
 	}
+	#footer_more ul {
+		-ms-flex-order: 1;
+		-moz-order: 1;
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+	#footer_cv ul {
+		-ms-flex-order: 1;
+		-moz-order: 1;
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
 
 	#footer .flex {
 		-moz-flex-direction: column;
@@ -3455,8 +3571,25 @@ button:disabled,
 		flex-direction: column;
 		text-align: center;
 	}
+	#footer_more .flex {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+	#footer_cv .flex {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
 
 }
+
+/* foorter ----- MORE ------ */
+
 
 /* sectionHead */
 
